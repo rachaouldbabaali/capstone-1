@@ -133,7 +133,10 @@ html {
     font-weight: 700;
 }
 
-
+.p{
+    margin: 0;
+    padding: 0;
+}
 .feat-box {
     background-color: rgba(255,255,255,.1);
     gap: 0.8rem;
@@ -166,6 +169,91 @@ html {
     display: block;
     margin: 0.5rem auto;
 }
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.6rem 0 4rem;
+}
+#courses h2 {
+    color: #272a31;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+#courses span {
+    height: 0.1em;
+    width: 4rem;
+    background-color: #ec5242;
+    border-radius: 1rem;
+    display: block;
+    margin: 1.5rem auto;
+    
+}
+#courses-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-around;
+    padding: 4rem 4rem;
+    
+}
+.courses-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 20px ;
+    transition: transform .5s ease-out;
+}
+.img-container {
+    display: flex;
+    aspect-ratio: 1/1;
+    max-height: 12rem;
+    max-width: 12rem;
+    align-items: flex-end;
+    justify-content: end;
+    background-image: url("images/img-background-big.png");
+    background-size: 140%; 
+}
+.img-container img {
+    max-width: 152.52px;
+    max-height: 152.52px;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    color: #272a31;
+    justify-content: center;
+    align-items: left;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.card-info h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: 0.6rem;
+    margin-block-end: 0;
+}
+.p1{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: left;
+    font-style: italic;
+    color: #ec5242;
+    margin-block-end: 0;
+}
+.p2 {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-block-end: 0;
+}
+
 #our-partners {
     background-color: #272a31;
     color: #d3d3d3;
@@ -254,6 +342,10 @@ footer {
     }
     #course-features h2{
         padding-top: 70px;
+    }
+    #courses-grid .courses-card {
+        padding: 0;
+        width: 100%;
     }
 }
 
