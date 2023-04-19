@@ -175,7 +175,8 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3.6rem 0 4rem;
+    padding: 3.6rem 4rem;
+    background-image: url("images/background2op.jpg");
 }
 #courses h2 {
     color: #272a31;
@@ -184,13 +185,12 @@ html {
     text-align: center;
 }
 #courses span {
-    height: 0.1em;
-    width: 4rem;
-    background-color: #ec5242;
-    border-radius: 1rem;
-    display: block;
-    margin: 1.5rem auto;
-    
+        height: 0.2em;
+        width: 4rem;
+        background-color: #ec5242;
+        border-radius: 1rem;
+        display: block;
+        margin: 0.5rem auto;
 }
 #courses-grid {
     display: grid;
@@ -206,7 +206,7 @@ html {
     justify-content: center;
     padding: 1.5rem;
     gap: 20px ;
-    transition: transform .5s ease-out;
+    transition: transform 0.5s ease-out;
 }
 .img-container {
     display: flex;
@@ -234,6 +234,7 @@ html {
     padding-left: 1rem;
     padding-top: 1rem;
 }
+    
 .card-info h3 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -246,7 +247,6 @@ html {
     text-align: left;
     font-style: italic;
     color: #ec5242;
-    margin-block-end: 0;
 }
 .p2 {
     font-size: .9rem;
@@ -254,6 +254,30 @@ html {
     margin-block-end: 0;
 }
 
+#courses-grid .courses-card:hover {
+    transform: scale(1.1);
+}
+#courses button {
+    width: 95%;
+    height: 3rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #272a31;
+    background-color: #fff;
+    border: 0.1rem solid #d3d3d3;
+    margin-top: 2rem;
+}
+#see-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.teachers-card.more-mobile {
+    display: flex;
+  }
 #our-partners {
     background-color: #272a31;
     color: #d3d3d3;
@@ -346,6 +370,9 @@ footer {
     #courses-grid .courses-card {
         padding: 0;
         width: 100%;
+    }
+    #see-more {
+        display: none;
     }
 }
 
@@ -454,11 +481,45 @@ footer {
     position: relative;
     top: 25px;
     left: 25px;
-
+    }
+    #courses-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        justify-content: space-between;
+        padding: 4rem 0;
+        
+    }
+    .courses-card {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 1.5rem;
+        gap: 20px ;
+        transition: transform 0.5s ease-out;
+    }
+    .p1{
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: left;
+        font-style: italic;
+        color: #ec5242;
+    }
+    .p2 {
+        font-size: .8rem;
+        font-weight: 500;
+        margin-block-end: 0;
+    }
+    #courses {
+        padding-right: 1rem;
+    }
+    .card-info { 
+        padding-top: 0;
     }
     footer p{
         font-size: 0.8rem;
         margin-top: 12px;
     }
+
 }
 

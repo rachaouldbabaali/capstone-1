@@ -152,9 +152,6 @@ for (let i = 0; i < 6; i += 1) {
   p1.classList = 'p1';
   p1.textContent = coursesDatabase[sixRamdonIndexes[i]].highlight;
   div.appendChild(p1);
-  // litle line between
-  const br = document.createElement('br');
-  div.appendChild(br);
   // short description
   const p2 = document.createElement('p');
   p2.classList = 'p2';
@@ -163,5 +160,5 @@ for (let i = 0; i < 6; i += 1) {
 }
 const button = document.createElement('button');
 button.id = 'see-more';
-button.innerHTML = 'more <i class="fa-solid fa-angle-down"></i>';
+button.innerHTML = 'more <i class="fa-solid fa-angle-down text-danger"></i>';
 featCourses.appendChild(button);
