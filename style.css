@@ -133,10 +133,6 @@ html {
     font-weight: 700;
 }
 
-.p{
-    margin: 0;
-    padding: 0;
-}
 .feat-box {
     background-color: rgba(255,255,255,.1);
     gap: 0.8rem;
@@ -176,7 +172,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 3.6rem 4rem;
-    background-image: url("images/background2op.jpg");
+    background-color: rgba(211, 211, 211, 0.4);
 }
 #courses h2 {
     color: #272a31;
@@ -275,7 +271,7 @@ html {
     padding: 2rem;
 }
 
-.teachers-card.more-mobile {
+.more-mobile {
     display: flex;
   }
 #our-partners {
@@ -516,6 +512,9 @@ footer {
     .card-info { 
         padding-top: 0;
     }
+    .more-mobile {
+        display: none;
+      }
     footer p{
         font-size: 0.8rem;
         margin-top: 12px;
