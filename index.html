@@ -7,64 +7,88 @@
     <title>SmartEd Online</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
     
 </head>
 <body>
     <!--nav bar-->
     <header>
-        <nav class="navbar navbar-expand-md mb-3navbar-light custom-nav fixed-top navbar-bg ">
-            <div class="container-fluid mx-5 pe-5">
-                <a class="navbar-brand ms-5 logo d-none d-lg-block" href="index.html"> 
-                    <img class="img-fluid " src="images/logo.png" alt="logo" >
-                </a>
-                <button class="navbar-toggler bord" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-5 mx-auto  justify-content-end align-items-center gap-3 ">
-                        <li class="nav-item ">
-                            <a class="nav-link text-dark " href="about-us.html">About us</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark " href="#">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark " href="#">My Learning</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Search
+      <nav class="navbar navbar-expand-md mb-3 navbar-light custom-nav fixed-top navbar-bg ">
+        <div class="container-fluid mx-5 pe-5">
+            <a class="navbar-brand ms-5 logo d-none d-lg-block" href="index.html"> 
+                <img class="img-fluid " src="images/logo.png" alt="logo" >
+            </a>
+            <button class="navbar-toggler bord" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mx-auto  justify-content-end align-items-start gap-3 ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark " href="about-us.html">About us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " href="#">My Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Search
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <forme class="d-flex" role="search">
+                                    <div class="hstack gap-3 me-3">
+                                        <input type="search" class="form-control form-control-sm me-auto"
+                                        placeholder="Search for ..." aria-label="search for ">
+                                        <button type="submit" class="btn btn-sm btn-success ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                                                <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                                                <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </forme>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <forme class="d-flex" role="search">
-                                        <div class="hstack gap-3 me-3">
-                                            <input type="search" class="form-control form-control-sm me-auto"
-                                            placeholder="Search for ..." aria-label="search for ">
-                                            <button type="submit" class="btn btn-sm btn-success ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-                                                    <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-                                                    <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </forme>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark me-5" href="#">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link enroll ms-3" href="#">Enroll Now</a>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark me-5" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-lg-3 enroll " href="#">Enroll Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <nav class="navbar navbar-expand-md bg-dark nav1 flex-end ">
+            <div class="container-fluid ">
+              <ul class="navbar-nav me-5 mx-auto  justify-content-end align-items-center gap-3 ">
+                <li class="nav-item ">
+                    <a class="nav-link text-light " href="about-us.html"> <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-light " href="#"> <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light " href="#">English</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light " href="#">Log out</a>
+                </li>
+                
+            </ul>
             </div>
         </nav>
+        
     </header>
     <!--end nav bar-->
     <!--banner-->
@@ -144,19 +168,36 @@
             </div>
           </div>
         </div>
-        <a class="text-justify text-center d-flex justify-content-center me-lg-5 text-uppercase see-more " href="#">See all Course Features</a>
+        <a class="text-justify text-center d-flex justify-content-center me-lg-5 text-uppercase see-more  " href="#">See all Course Features</a>
+        <a href="#" class="btn btn-lg mt-2 me-3 learn-btn join-btn">Join Us Now</a>
       </section>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.swipe.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+
+      <!-- hide SECTION in mobile-->
+    <footer>
+      
+      <div class="row d-flex justify-content-center">
+        <div class="col-3 m--lg-5 d-flex align-items-center justify-content-end">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+      <div class="col-6 m-lg-5 align-items-end justify-content-start ">
+        <p class="pt-lg-3 ">  Copyright © 2023, Smarted online <span> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit quasi
+            eveniet maxime iure veniam. Suasi eveniet maxime iure veniam</span> <br> Some rights reserved <br> <a
+            href="">SmartEd-online.com</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.swipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bafe6405e0.js" crossorigin="anonymous"></script>
         <script src="app.js"></script>
 </body>
 </html>

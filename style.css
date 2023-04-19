@@ -3,7 +3,6 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    height: 500vh;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -53,9 +52,8 @@ html {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
-    top: 0;
+    top: 2rem;
     left: 0;
-    
 }
 .slogon{
     font-family: 'Lato', sans-serif;
@@ -172,10 +170,42 @@ html {
     display: block;
     margin: 0.5rem auto;
 }
+footer {
+    background-image: url("images/footerbg.PNG");
+    padding-top: 20px;
+}
 @media ( min-width: 768px) {
+    .navbar-bg { 
+        z-index: 1;
+    }
+    .nav1 {
+    background-color: #272a31;
+    display: flex;
+    justify-content: end;
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    }
+    .nav1 ul{
+        list-style: none;
+        padding-top: 2px;
+    }
+    .nav1 ul li a{
+        color: #d3d3d3;
+        font-weight: 600;
+        font-size: .8rem;
+        text-decoration: none;
+    }
+    .fa-instagram:before {
+        content: "\f16d";
+    }
     .navbar-bg{
         background-color: #fff;
         font-weight: 600;
+        position: fixed;
+        top: 2rem
     }
     .slogon {
         white-space: nowrap;
@@ -191,6 +221,9 @@ html {
     }
     .learn-btn {
         white-space: nowrap;
+    }
+    .join-btn {
+        display: none;
     }
 }
 
@@ -215,10 +248,20 @@ html {
         height: fit-content;
         background-image: url("images/mobilebg.jpg");
         background-position: top;
+        position: relative;
+    top: 0;
+    left: 0;
     }
     .overlay {
-        background-color: rgba(255, 255, 255, 0.9);
-        height: fit-content;
+    content: "";
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+        
     }
     .start-now {
         font-size: 1.5rem;
@@ -251,6 +294,20 @@ html {
     }
     #course-features a{
         margin-top: 22px;
+    }
+    .nav1{
+        display: none;
+    }
+    .enroll{
+        width: 100%;
+        padding: 6px;
+    }
+    .see-more{
+        display: none;
+    }
+    footer p{
+        font-size: 0.8rem;
+        margin-top: 12px;
     }
 }
 
