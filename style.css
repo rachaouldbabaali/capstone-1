@@ -130,13 +130,9 @@ html {
     color: #d3d3d3;
 }
 #course-features h2 {
-    
     font-weight: 700;
 }
-.see-more {
-    color: #d3d3d3;
-    font-weight: bold;
-}
+
 
 .feat-box {
     background-color: rgba(255,255,255,.1);
@@ -169,6 +165,32 @@ html {
     border-radius: 1rem;
     display: block;
     margin: 0.5rem auto;
+}
+#our-partners {
+    background-color: #272a31;
+    color: #d3d3d3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#our-partners span {
+    height: 0.1em;
+    width: 4rem;
+    background-color: #ec5242;
+    border-radius: 1rem;
+    display: block;
+    margin: 0.5rem auto;
+}
+#our-partners h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.partner img{
+    width: 170px;
+    margin: 25px;
+    opacity: 0.7;
 }
 footer {
     background-image: url("images/footerbg.PNG");
@@ -225,6 +247,14 @@ footer {
     .join-btn {
         display: none;
     }
+    .more {
+        color: #d3d3d3;
+        font-weight: bold;
+        display: block;
+    }
+    #course-features h2{
+        padding-top: 70px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -264,7 +294,7 @@ footer {
         
     }
     .start-now {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .learn-btn {
         font-size: 1rem;
@@ -292,18 +322,47 @@ footer {
     #course-features h2 {
         font-size: 2rem;
     }
-    #course-features a{
-        margin-top: 22px;
-    }
     .nav1{
         display: none;
     }
-    .enroll{
+    .enroll {
         width: 100%;
         padding: 6px;
     }
-    .see-more{
-        display: none;
+    .more {
+        display: none !important;
+    }
+    
+    .partner img{
+        width: 100px;
+        margin: 15px;
+        opacity: 0.7;
+    }
+    .join-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        color: white;
+    background-color: #ec5242;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+    left: 25px;
+        
+    }
+    .join-btn:hover {
+        border: 5px solid #ec5242;
+    color: #ec5242;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+
     }
     footer p{
         font-size: 0.8rem;
