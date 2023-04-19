@@ -126,7 +126,52 @@ html {
     top: 25px;
     left: 25px;
 }
+#course-features {
+    background-color: #272a31;
+    background-image: url("images/main-program-background.png");
+    color: #d3d3d3;
+}
+#course-features h2 {
+    
+    font-weight: 700;
+}
+.see-more {
+    color: #d3d3d3;
+    font-weight: bold;
+}
 
+.feat-box {
+    background-color: rgba(255,255,255,.1);
+    gap: 0.8rem;
+    font-size: small;
+    transition: transform .5s ease-out;
+}
+.feat-box:hover {
+    transform: scale(1.1);
+}
+.feat-box h3{
+    font-weight: bold;
+    color: #ec5242;
+    font-size: 1.6rem;
+    min-width: 90px;
+}
+.feat-box img {
+    width: 3rem;
+    height: 3rem;
+}
+.feat-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #d3d3d3;
+}
+#course-features span {
+    height: 0.1em;
+    width: 4rem;
+    background-color: #ec5242;
+    border-radius: 1rem;
+    display: block;
+    margin: 0.5rem auto;
+}
 @media ( min-width: 768px) {
     .navbar-bg{
         background-color: #fff;
@@ -147,7 +192,6 @@ html {
     .learn-btn {
         white-space: nowrap;
     }
-    
 }
 
 @media (max-width: 768px) {
@@ -173,13 +217,40 @@ html {
         background-position: top;
     }
     .overlay {
-        height: 1350px;
+        background-color: rgba(255, 255, 255, 0.9);
+        height: fit-content;
     }
     .start-now {
         font-size: 1.5rem;
     }
     .learn-btn {
         font-size: 1rem;
+    }
+    .feat-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        gap: 2rem;
+        padding: 4%;
+        width: 100ù;
+    }
+    .feat-box h3 {
+        font-size: 1.2rem;
+    }
+    .feat-box p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    #course-features span {
+        margin-bottom: 22px;
+    }
+    #course-features h2 {
+        font-size: 2rem;
+    }
+    #course-features a{
+        margin-top: 22px;
     }
 }
 
