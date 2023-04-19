@@ -162,3 +162,11 @@ const button = document.createElement('button');
 button.id = 'see-more';
 button.innerHTML = 'more <i class="fa-solid fa-angle-down text-danger"></i>';
 featCourses.appendChild(button);
+
+button.addEventListener('click', () => {
+  const moreCards = document.querySelectorAll('.more-mobile');
+  moreCards.forEach((card) => {
+    card.classList.remove('more-mobile');
+  });
+  button.remove();
+});
