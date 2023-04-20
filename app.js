@@ -120,7 +120,7 @@ const featCourses = document.getElementById('courses');
 // Section heading
 const h2 = document.createElement('h2');
 h2.className = 'card-heading';
-h2.textContent = 'Our Featured Courses';
+h2.textContent = 'Our Courses';
 featCourses.appendChild(h2);
 // litle line between
 const span = document.createElement('span');
