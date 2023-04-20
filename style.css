@@ -247,7 +247,7 @@ html {
 }
 .p1{
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: left;
     font-style: italic;
     color: #ec5242;
@@ -378,6 +378,9 @@ footer {
     #see-more {
         display: none;
     }
+    .navbar-mob {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -504,7 +507,7 @@ footer {
     }
     .p1{
         font-size: 0.8rem;
-        font-weight: 500;
+        font-weight: 600;
         text-align: left;
         font-style: italic;
         color: #ec5242;
@@ -516,6 +519,8 @@ footer {
     }
     #courses {
         padding-right: 1rem;
+        padding-left: 1rem;
+
     }
     .card-info { 
         padding-top: 0;
@@ -539,6 +544,12 @@ footer {
         font-size: 0.8rem;
         margin-top: 12px;
     }
-    
+    .footer-img{
+        width: 100px;
+        margin: 15px;
+    }
+    .navbar-mob{
+        color: #070707;
+    }
 }
 
