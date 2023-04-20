@@ -291,9 +291,9 @@ html {
     margin: 25px;
     opacity: 0.7;
 }
-footer {
+.home-footer {
     background-image: url("images/footerbg.PNG");
-    padding-top: 20px;
+    
 }
 @media ( min-width: 768px) {
     .navbar-bg { 
@@ -529,7 +529,6 @@ footer {
     }
     footer p{
         font-size: 0.8rem;
-        margin-top: 12px;
     }
     .footer-img{
         width: 100px;
@@ -594,5 +593,9 @@ footer {
       .second:hover {
         transform: scale(1.1);
       }
-    
+      .about-footer {
+        background-color: #272a31;
+        color:#d3d3d3;
+        padding-top: 20px;
+    }
 
