@@ -62,7 +62,6 @@ html {
     color: #ec5242;
     position: relative;
     top: 25px;
-    left: 25px;
 }
 .title{
     font-family: 'Lato', sans-serif;
@@ -72,7 +71,6 @@ html {
     color: #ec5242;
     position: relative;
     top: 25px;
-    left: 25px;
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255,0,0,.6);
@@ -86,7 +84,6 @@ html {
     color: #070707;
     position: relative;
     top: 25px;
-    left: 25px;
     border: 3px solid #f7f7f7;
     background-color: #f7f7f7;
     
@@ -165,8 +162,8 @@ html {
     font-weight: 500;
     color: #d3d3d3;
 }
-#course-features span {
-    height: 0.1em;
+.span {
+    height: 0.2em;
     width: 4rem;
     background-color: #ec5242;
     border-radius: 1rem;
@@ -188,14 +185,7 @@ html {
     font-weight: 700;
     text-align: center;
 }
-#courses span {
-        height: 0.2em;
-        width: 4rem;
-        background-color: #ec5242;
-        border-radius: 1rem;
-        display: block;
-        margin: 0.5rem auto;
-}
+
 #courses-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -289,14 +279,7 @@ html {
     padding-bottom: 30px;
 }
 
-#our-partners span {
-    height: 0.1em;
-    width: 4rem;
-    background-color: #ec5242;
-    border-radius: 1rem;
-    display: block;
-    margin: 0.5rem auto;
-}
+
 #our-partners h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -381,6 +364,10 @@ footer {
     .navbar-mob {
         display: none;
     }
+    #smartEd-logo img{
+        padding: 2rem;
+        width: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -442,7 +429,7 @@ footer {
         font-size: 0.8rem;
         margin-bottom: 0;
     }
-    #course-features span {
+    .span {
         margin-bottom: 22px;
     }
     #course-features h2 {
@@ -550,6 +537,62 @@ footer {
     }
     .navbar-mob{
         color: #070707;
+        list-style: none;
     }
 }
+
+/* about page */
+
+#smartEd-logo h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#smartEd-logo p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0 2rem;
+}
+#smartEd-logo img{
+    padding: 2rem;
+    border: #d3d3d3 3px solid;
+}
+
+#testimonials {
+    background-image: url("images/background2op.jpg");
+}
+
+#testimonials h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+#testimonials p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0 2rem;
+}
+
+
+
+      .first {
+        background-image: url(images/testemonial-1-small.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+        .first:hover {
+            transform: scale(1.1);
+        }
+
+      .second {
+        background-image: url(images/testemonial-2-small.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .second:hover {
+        transform: scale(1.1);
+      }
+    
 

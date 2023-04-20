@@ -8,6 +8,11 @@ window.addEventListener('scroll', () => {
   }
 });
 
+const bordBtn = document.querySelector('.bord');
+bordBtn.addEventListener('click', () => {
+  nav.classList.add('scrolled');
+});
+
 // functions
 
 // generate a random number between 2 integers inclusive
