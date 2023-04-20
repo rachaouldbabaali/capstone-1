@@ -217,7 +217,7 @@ show me your support by following me on github and giving me a star ⭐️.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-This project was designed to test some of the abilities I learned in the first module of the Microverse program. I had to create a website from scratch following basic [design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). 
+The original design ide goes to [Cindy Shin](https://www.behance.net/adagio07)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
