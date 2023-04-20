@@ -13,6 +13,10 @@ bordBtn.addEventListener('click', () => {
   nav.classList.add('scrolled');
 });
 
+const navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
+navbarTogglerIcon.addEventListener('click', () => {
+  navbarTogglerIcon.classList.toggle('navbar-toggler-icon-close');
+});
 // functions
 
 // generate a random number between 2 integers inclusive
