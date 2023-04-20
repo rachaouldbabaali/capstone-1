@@ -56,7 +56,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [Smarted online] <a name="about-project"></a>
 
 SmartEd Online is a leading online school that offers a wide range of courses and programs to students of all ages. The importance of an online school like SmartEd Online cannot be overstated. It provides students with the flexibility to learn at their own pace, which is especially important for those who have other commitments such as work or family.
 
