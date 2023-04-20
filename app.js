@@ -120,6 +120,7 @@ h2.textContent = 'Our Featured Courses';
 featCourses.appendChild(h2);
 // litle line between
 const span = document.createElement('span');
+span.className = 'span';
 featCourses.appendChild(span);
 // create a card-gird ul list for courses
 const ul = document.createElement('ul');
@@ -168,10 +169,17 @@ button.id = 'see-more';
 button.innerHTML = 'more <i class="fa-solid fa-angle-down text-danger"></i>';
 featCourses.appendChild(button);
 
-button.addEventListener('click', () => {
-  const moreCards = document.querySelectorAll('.more-mobile');
-  moreCards.forEach((card) => {
-    card.classList.remove('more-mobile');
+// add more and less functionality to the button
+const seeMore = document.querySelector('#see-more');
+const moreMobile = document.querySelectorAll('.more-mobile');
+const seeMoreArr = Array.from(moreMobile);
+seeMore.addEventListener('click', () => {
+  seeMoreArr.forEach((child) => {
+    child.classList.toggle('more-mobile');
   });
-  button.remove();
+  if (seeMore.innerHTML === 'more <i class="fa-solid fa-angle-down text-danger"></i>') {
+    seeMore.innerHTML = 'less <i class="fa-solid fa-angle-up text-danger"></i>';
+  } else {
+    seeMore.innerHTML = 'more <i class="fa-solid fa-angle-down text-danger"></i>';
+  }
 });

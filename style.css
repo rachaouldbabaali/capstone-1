@@ -37,7 +37,9 @@ html {
 .navbar-toggler {   
     border: 0;
 }
-
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 .banner-holder {
     background-image: url("images/webbackground.png");
     background-size: cover;
@@ -278,8 +280,6 @@ html {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-
 #our-partners h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -290,10 +290,28 @@ html {
     width: 170px;
     margin: 25px;
     opacity: 0.7;
+    filter: grayscale(100%);
+}
+#about-our-partners {
+    background-color: #272a31;
+    color: #d3d3d3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#about-our-partners h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    opacity: 0.7;
 }
 .home-footer {
     background-image: url("images/footerbg.PNG");
     
+}
+.home-footer img{
+    width: 70%;
+    height: 70%;
+    filter: grayscale(70%);
 }
 @media ( min-width: 768px) {
     .navbar-bg { 
@@ -367,6 +385,13 @@ html {
     #smartEd-logo img{
         padding: 2rem;
         width: 500px;
+    }
+    #about-our-partners {
+        display: none;
+    }
+    .about-footer {
+        background-color: #272a31;
+        color: #d3d3d3;
     }
 }
 
@@ -538,6 +563,21 @@ html {
         color: #070707;
         list-style: none;
     }
+    #our-partners{
+        display: none;
+    }
+    #about-our-partners{
+        display: block;
+    }
+    .home-footer{
+        display: none;
+    }
+    .about-footer {
+        padding-top: 23px;
+        background-color: #f7f7f7;
+        color: #272a31;
+    }
+    
 }
 
 /* about page */
@@ -593,9 +633,5 @@ html {
       .second:hover {
         transform: scale(1.1);
       }
-      .about-footer {
-        background-color: #272a31;
-        color:#d3d3d3;
-        padding-top: 20px;
-    }
+    
 
