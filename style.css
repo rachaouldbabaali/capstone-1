@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:ital,wght@0,300;0,700;0,900;1,400;1,700&family=Poppins:wght@600&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.scrolled {
+    background-color: #fff ;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.enroll{
+    border: 3px solid #ec5242;
+    color: #ec5242;
+    font-weight: 700;
+}
+.enroll:hover{
+    color: white;
+    background-color: #ec5242;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.navbar-toggler {   
+    border: 0;
+}
+
+.banner-holder {
+    background-image: url("images/webbackground.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 900px;
+    width: 100%;
+}
+.overlay{
+    content: "";
+    background-position: bottom;
+    height: 900px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+.slogon{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 520;
+    color: #ec5242;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.title{
+    font-family: 'Lato', sans-serif;
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    font-weight: 700;
+    color: #ec5242;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255,0,0,.6);
+    background-image: url("images/textbg.jpg");
+    background-size: 100%;
+}
+.definition{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #070707;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border: 3px solid #f7f7f7;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+.definition:hover{
+    color: #070707;
+    font-weight: bold;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+.start-now{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #272a31;
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+.learn-btn{ 
+    border: 5px solid #ec5242;
+    color: #ec5242;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.learn-btn:hover{
+    color: white;
+    background-color: #ec5242;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+#course-features {
+    background-color: #272a31;
+    background-image: url("images/main-program-background.png");
+    color: #d3d3d3;
+}
+#course-features h2 {
+    
+    font-weight: 700;
+}
+.see-more {
+    color: #d3d3d3;
+    font-weight: bold;
+}
+
+.feat-box {
+    background-color: rgba(255,255,255,.1);
+    gap: 0.8rem;
+    font-size: small;
+    transition: transform .5s ease-out;
+}
+.feat-box:hover {
+    transform: scale(1.1);
+}
+.feat-box h3{
+    font-weight: bold;
+    color: #ec5242;
+    font-size: 1.6rem;
+    min-width: 90px;
+}
+.feat-box img {
+    width: 3rem;
+    height: 3rem;
+}
+.feat-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #d3d3d3;
+}
+#course-features span {
+    height: 0.1em;
+    width: 4rem;
+    background-color: #ec5242;
+    border-radius: 1rem;
+    display: block;
+    margin: 0.5rem auto;
+}
+footer {
+    background-image: url("images/footerbg.PNG");
+    padding-top: 20px;
+}
+@media ( min-width: 768px) {
+    .navbar-bg { 
+        z-index: 1;
+    }
+    .nav1 {
+    background-color: #272a31;
+    display: flex;
+    justify-content: end;
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    }
+    .nav1 ul{
+        list-style: none;
+        padding-top: 2px;
+    }
+    .nav1 ul li a{
+        color: #d3d3d3;
+        font-weight: 600;
+        font-size: .8rem;
+        text-decoration: none;
+    }
+    .fa-instagram:before {
+        content: "\f16d";
+    }
+    .navbar-bg{
+        background-color: #fff;
+        font-weight: 600;
+        position: fixed;
+        top: 2rem
+    }
+    .slogon {
+        white-space: nowrap;
+    }
+    .title {
+        white-space: nowrap;
+    }
+    .definition {
+        white-space: nowrap;
+    }
+    .start-now {
+        white-space: nowrap;
+    }
+    .learn-btn {
+        white-space: nowrap;
+    }
+    .join-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-bg{
+        background-color: transparent;
+    }
+    .scrolled {
+        background-color: #f7f7f7 ;
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25);
+        transition: all 0.5s ease;
+    }
+    .title {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .definition {
+        font-size: 1rem;
+    }
+    .banner-holder {
+        background-size: contain;
+        height: fit-content;
+        background-image: url("images/mobilebg.jpg");
+        background-position: top;
+        position: relative;
+    top: 0;
+    left: 0;
+    }
+    .overlay {
+    content: "";
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+        
+    }
+    .start-now {
+        font-size: 1.5rem;
+    }
+    .learn-btn {
+        font-size: 1rem;
+    }
+    .feat-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        gap: 2rem;
+        padding: 4%;
+        width: 100ù;
+    }
+    .feat-box h3 {
+        font-size: 1.2rem;
+    }
+    .feat-box p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    #course-features span {
+        margin-bottom: 22px;
+    }
+    #course-features h2 {
+        font-size: 2rem;
+    }
+    #course-features a{
+        margin-top: 22px;
+    }
+    .nav1{
+        display: none;
+    }
+    .enroll{
+        width: 100%;
+        padding: 6px;
+    }
+    .see-more{
+        display: none;
+    }
+    footer p{
+        font-size: 0.8rem;
+        margin-top: 12px;
+    }
+}
+
