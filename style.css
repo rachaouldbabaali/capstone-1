@@ -87,7 +87,6 @@ html {
   font-weight: 700;
   position: relative;
   top: 25px;
-  background-clip: text;
   -webkit-background-clip: text;
   color: rgba(255, 0, 0, 0.6);
   background-image: url("images/textbg.jpg");
@@ -260,7 +259,6 @@ footer p {
   flex-direction: column;
   color: #272a31;
   justify-content: center;
-  align-items: left;
   padding-left: 1rem;
   padding-top: 1rem;
 }
@@ -477,7 +475,6 @@ footer p {
 
   .banner-holder {
     background-size: contain;
-    height: fit-content;
     background-image: url("images/mobilebg.jpg");
     background-position: top;
     position: relative;
