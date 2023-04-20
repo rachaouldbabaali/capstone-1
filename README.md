@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+
 
 <!--
 HOW TO USE:
@@ -234,3 +234,5 @@ This project is [MIT](https://github.com/rachaouldbabaali/capstone-1/blob/capsto
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+=======
+>>>>>>> main
