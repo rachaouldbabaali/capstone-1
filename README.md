@@ -62,6 +62,7 @@ SmartEd Online is a leading online school that offers a wide range of courses an
 
 This project was designed to test some of the abilities I learned in the first module of the Microverse program. I had to create a website from scratch following basic [design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). 
 
+and here is th [presentation video](https://www.loom.com/share/d74267dbcd5649569d7aeae6c30c4316)
 
 ## 🛠 Built With <a name="built-with"></a>
 <img alt="HTML Badge" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white">
